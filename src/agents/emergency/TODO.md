@@ -16,12 +16,6 @@ This challenge uses a mock Hospital Information System (HIS) that runs as a sepa
 
 ### Local Server Setup
 
-**Important:** The python script is named `mcp-server.py` but the `Dockerfile` is expecting `main.py`. Before building, please rename the file:
-
-```bash
-mv mcp-server.py main.py
-```
-
 **1. Build the Docker Image:**
 From within the `src/agents/emergency` directory, run:
 ```bash

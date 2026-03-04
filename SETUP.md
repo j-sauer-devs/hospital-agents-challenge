@@ -81,22 +81,12 @@ The application has two main modes: `ingest` and `chat`.
         *   "How is Albert Johnson doing?"
         *   "Tell me about Albert Johnson"
 
-## 5. Evaluating the Agent
-
-Since the agent's initial performance is suboptimal, the next step is to evaluate it.
-
-*   **Run the evaluation script:**
-    ```bash
-    poetry run python scripts/run_evaluation.py
-    ```
-*   **Note**: This script needs to be created as part of the hackathon challenge. It will use a "golden dataset" to measure the agent's responses. For instructions on how to create your own, see the Appendix.
-
-## 6. The Hackathon Begins!
+## 5. The Hackathon Begins!
 
 The setup is complete. Your mission is to improve the system by:
 
 *   **Tackling the `TODO`s** in the codebase.
-*   **Improving the agent** through evaluation.
+
 *   **Processing new data types**.
 *   **Building smarter, multi-agent systems**.
 
@@ -112,7 +102,7 @@ make generate-data
 ```
 
 ### Generating a Golden Dataset
-The evaluation script uses a pre-made golden dataset. If you want to create your own for customized testing:
+ The script uses a pre-made golden dataset. If you want to create your own for customized testing:
 1.  **Generate raw data** (if needed):
     ```bash
     poetry run python scripts/generate_data.py

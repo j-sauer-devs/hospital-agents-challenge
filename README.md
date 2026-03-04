@@ -48,10 +48,7 @@ The application operates in two primary modes:
     poetry run python main.py --mode chat --agent receptionist
     ```
 
--   **Evaluate Performance:**
-    ```bash
-    poetry run python scripts/run_evaluation.py
-    ```
+
 
 ---
 

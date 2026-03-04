@@ -1,6 +1,6 @@
 # Scripts Directory
 
-This directory contains all the operational scripts for the project, from infrastructure setup to data generation and evaluation.
+This directory contains all the operational scripts for the project, from infrastructure setup to data generation and .
 
 ---
 
@@ -26,7 +26,7 @@ This directory contains all the operational scripts for the project, from infras
     poetry run python scripts/create_enterprise_engine.py
     ```
 
-### Data Generation & Evaluation
+### Data Generation & 
 
 #### `generate_data.py`
 
@@ -39,18 +39,18 @@ This directory contains all the operational scripts for the project, from infras
 
 #### `generate_golden_dataset.py`
 
--   **Purpose**: Creates the "golden" or "ground truth" dataset used for evaluating the agent's performance. It reads the raw PDFs, uses Gemini to create high-quality question-and-answer pairs from each document, and saves them to `data/processed/golden_dataset.jsonl`.
+-   **Purpose**: Creates the "golden" or "ground truth" dataset used for the agent's performance. It reads the raw PDFs, uses Gemini to create high-quality question-and-answer pairs from each document, and saves them to `data/processed/golden_dataset.jsonl`.
 -   **How it's used**: Run this script after you have your raw data in place. The output is the benchmark against which the agent's answers are measured.
 -   **Usage**:
     ```bash
     poetry run python scripts/generate_golden_dataset.py
     ```
 
-#### `run_evaluation.py`
+#### `run_.py`
 
--   **Purpose**: This is the primary script for evaluating the RAG agent's performance. It runs the agent against each question in the `golden_dataset.jsonl`, then uses the Vertex AI Evaluation Service to score the agent's responses on metrics like "groundedness" and "instruction_following".
+-   **Purpose**: This is the primary script for the RAG agent's performance. It runs the agent against each question in the `golden_dataset.jsonl`, then uses the Vertex AI Service to score the agent's responses on metrics like "groundedness" and "instruction_following".
 -   **How it's used**: Run this script whenever you want to measure the impact of changes to your agent (e.g., prompt changes, model changes). The detailed results are saved to `data/processed/eval_results.json`.
 -   **Usage**:
     ```bash
-    poetry run python scripts/run_evaluation.py
+    poetry run python scripts/run_.py
     ```
