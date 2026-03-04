@@ -54,6 +54,5 @@ The application operates in two primary modes:
 
 ## Project Documentation
 
--   **[AGENT_ARCHITECTURE.md](./AGENT_ARCHITECTURE.md):** Detailed technical breakdown of the multi-agent flow and A2A integration.
 -   **[SETUP.md](./SETUP.md):** Guide for installation and configuration.
 -   **[INFRASTRUCTURE_SETUP.md](./INFRASTRUCTURE_SETUP.md):** Step-by-step GCP resource provisioning.
